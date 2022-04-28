@@ -5,7 +5,8 @@ const Discord = require("discord.js") // Accessa a biblioteca através da variá
 const client = new Discord.Client({ // Client necessário para receber a API do discord 
     intents: [ // Interações Privilegiadas
         "GUILDS", // Guilds são grupos de canais para o usuário pode se reunir pra conversar 
-        "GUILD_MESSAGES"
+        "GUILD_MESSAGES",
+        "GUILD_MEMBERS"
     ]
 }) 
 
@@ -24,4 +25,9 @@ client.on("messageCreate", (message) => { // Evento que reconhece a mensagem ent
     }
 })
 
+const welcomeChannelId = "969052725461528636"
+
+client.on("guildMemberAdd", (member) => {
+    member.guild.channels.cache.get(welcomeChannelId).send(`<@${member.id}> Welcome to the server!`) // Guild é o objeto
+})
 client.login(process.env.TOKEN)
