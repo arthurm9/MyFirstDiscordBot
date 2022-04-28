@@ -1,0 +1,4 @@
+# o gitignore não adiciona ao repositório os arquivos aqui especificados:
+.env
+package-lock.json
+node_modules/
