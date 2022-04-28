@@ -1,5 +1,5 @@
 const Canvas = require("canvas")
 
-const generateImage = async (member) => {
-    
-}
+/*const generateImage = async (member) => {
+
+}*/
