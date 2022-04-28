@@ -1,6 +1,6 @@
-const Discord = require("discord.js") // Accessa a biblioteca através da variável Discord
-
 require ("dotenv").config() // "require" é usado para carregar modules. Incorpora funções que estão em arquivos externos (módulos)
+
+const Discord = require("discord.js") // Accessa a biblioteca através da variável Discord
 
 const client = new Discord.Client({ // Client necessário para receber a API do discord 
     intents: [ // Interações Privilegiadas
