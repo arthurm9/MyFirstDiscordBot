@@ -2,8 +2,6 @@ const Discord = require("discord.js") // Accessa a biblioteca através da variá
 
 require ("dotenv").config() // "require" é usado para carregar modules. Incorpora funções que estão em arquivos externos (módulos)
 
-const TOKEN = "OTY4OTk0MTQ2OTY4ODIxNzYw.Ymm8Hw.9fWuU2ZwaU2jmcbLefCACp0tTYQ" // TOKEN fornecida no discord developer portal
-
 const client = new Discord.Client({ // Client necessário para receber a API do discord 
     intents: [ // Interações Privilegiadas
         "GUILDS", // Guilds são grupos de canais para o usuário pode se reunir pra conversar 
